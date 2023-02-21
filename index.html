@@ -7,7 +7,12 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="root"></div>
+  
+  <div id="root">
+    <div>첫번째</div>
+    <div>두번째</div>
+    <div>세번째</div>
+  </div>
   <script>
     // 1.
     // let a = 1;
@@ -36,17 +41,109 @@
     // let kim="김혜윤";
     // let kim="김재민";
 
-    // 5.2 변수를 많이 써야 할 때. 객체(object)를 생각하기 .표기법
-    let kim={
-      a:"김혜윤",
-      b:"김재민",
-      c:"김인준",
-      d:"김지성",
-      e:"김동혁"
-    }
-    console.log(kim);
-    let root=document.getElementById("root");
+    // 5.2 변수를 많이 써야 할 때. 점표기법, 객체(object)를 생각하기 변수를 key(객체로부터 생성된 것)
+    // let kim={
+    //   a:"김혜윤",
+    //   b:"김재민",
+    //   c:"김인준",
+    //   d:"김지성",
+    //   e:"김동혁"
+    // }
+    // console.log(kim);
+    // let root=document.getElementById("root");
+    // console.dir(root);
+
+    // 6.1 객체의 소중함. 객체지향언어
+    // let itsMe={
+    //   name:"hanyujin",
+    //   age:24,
+    //   job:"developer",
+    //   home:"home",
+    //   food:"icecream",
+    //   color:"black"
+    // };
+    // let hanyujinname="hanyujin";
+    // let hanyujinage=24;
+    // let hanyujinjob="developer";
+    // let hanyujinhome="home";
+
+    // 6.2 자료구조 
+//     let itsMe={
+//       name:"hanyujin",
+//       age:24,
+//       job:"developer",
+//       home:"home",
+//       food:"icecream",
+//       color:"black",
+//       hobby:{
+//         first:"coding",
+//         second:"reading"
+//       }
+//     };
+// //  작성법은 쉬우나 활용법은 어렵다
+//     let a="ho";
+//     let b="bby";
+//     console.log(itsMe.hobby.second);
+//     console.log(itsMe[a+b]["second"]);
+//     console.log(itsMe.hobby["second"]);
+    
+//     console.log(itsMe.name);
+//     console.log(itsMe["name"]);
+//     console.log(itsMe.age);
+//     console.log(itsMe["age"]);
+//     //.표기법은 변수처럼 대괄호는 문자열처럼
+//     console.log(itsMe.hobby.second);
+//     console.log(itsMe["hobby"]["second"]);
+
+//6.3 순서를 구분할 수 있는 배열
+    // let itsMe={
+    //       1:"hanyujin",
+    //       2:24,
+    //       3:"developer",
+    //       4:"home",
+    //     };
+    //     // console.log(itsMe.1);
+    //     console.log(itsMe[1]);
+
+    //6.4 0~
+      // let itsMe=["hanyujin",24, "developer","home"]
+      // console.log(typeof(itsMe));
+      // console.log(itsMe[0]);
+      // console.log(itsMe[1]);
+      // console.log(itsMe[2]);
+      // console.log(itsMe[3]);
+
+    //6.5 배열 
+    // let itsMe=["hanyujin",24, "developer","home"]
+    // console.dir(itsMe);
+    // console.log(itsMe.length);
+    // console.log(itsMe["length"]);
+    //7
+    let root;
+    console.log(root);
+    root=document;
     console.dir(root);
+    console.log(typeof(root));
+    let a=root.getElementById('root');
+    console.log(a);
+    console.dir(a.children[1]);
+
+    // 두번째 글 찾고 컬러 바꾸기
+
+    console.log(a.children[1]);
+    console.dir(a.children[1]);
+    // 찾음 그러면 컬러를 어떻게?
+    a.children[1].style.color="blue";
+    // 다른 스타일은?
+    a.children[1].style.border="3px";
+    a.children[1].style.bordercolor="red";
+
+    // a.children[1].style.color="#red";
+    // a.children[1]=b;
+    
+    // let b=root.getElementById('root');
+    // console.dir(a.children[2]);
   </script>
+
 </body>
 </html>
